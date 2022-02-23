@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { responseApi } from '../models/models';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,6 @@ export class OrganismsService {
   ) { }
 
   getData(){
-    return this.http.get(environment.ApiURL);
+    return this.http.get<responseApi>(environment.ApiURL);
   }
 }
