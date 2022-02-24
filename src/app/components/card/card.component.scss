@@ -1,6 +1,6 @@
 .container{
-    width: 250px;
-    height: 150px;
+    width: 270px;
+    height: 200px;
     background-color: #76FBDC;
     margin: 10px;
     border-radius: 15px;
@@ -12,4 +12,14 @@
 h5{
     text-align: start;
     margin-left: 15px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 140px;
+        height: 140px;
+    }
 }

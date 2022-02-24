@@ -1,6 +1,7 @@
 <div class="listOfCards">
     <app-card 
         *ngFor="let item of data" 
-        [title]="item.Name" [parent]="findParent(item)">
+        [title]="item.Name" [parent]="findParent(item)"
+        [numberChildren]="findNumberChildren(item)">
     </app-card>
 </div>

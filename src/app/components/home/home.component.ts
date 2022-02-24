@@ -40,4 +40,8 @@ export class HomeComponent implements OnInit {
     return 'Has no parent'
   }
 
+  findNumberChildren(organism: organism){
+    return this.data.filter( org => org.Parent == Number(organism.ID)).length
+  }
+
 }

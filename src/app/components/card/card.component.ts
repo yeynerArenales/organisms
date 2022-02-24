@@ -9,6 +9,7 @@ export class CardComponent implements OnInit {
 
   @Input() title: string = ''
   @Input() parent: string = 'Has no parent'
+  @Input() numberChildren: number = 0
 
   constructor() { }
 
