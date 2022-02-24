@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div class="listOfCards">
+    <app-card 
+        *ngFor="let item of data" 
+        [title]="item.Name" [parent]="findParent(item)">
+    </app-card>
+</div>

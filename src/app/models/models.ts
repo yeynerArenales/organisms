@@ -5,5 +5,5 @@ export interface responseApi{
 export interface organism{
     ID: string,
     Name: string,
-    parent: number
+    Parent: number
 }
